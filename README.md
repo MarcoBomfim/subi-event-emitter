@@ -15,7 +15,11 @@ yarn test
 ## How do I get started
 Please have a look at [eventEmitter.test.ts](./src/eventEmitter.test.ts)
 
- * You're going to build a simple basic event emitter. What is an event emitter? Put it simply, it allows calling clients to register handlers for specific events (eg a mouse click) such that when an event is emitted, each callback is invoked with the payload.
+You're going to build a simple basic event emitter. 
+
+What is an event emitter? 
+
+Put it simply, it allows calling clients to register handlers for specific events (eg a mouse click) such that when an event is emitted, each callback is invoked with the payload.
  
 ##  INSTRUCTIONS:
  *   1. Complete eventEmitter.ts - use the tests in (eventEmitter.test.ts) to guide you as to what to implement. Naturally,
