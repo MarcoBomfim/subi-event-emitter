@@ -1,6 +1,5 @@
 import { EventEmitter } from "./eventEmitter";
 
-
 describe("EventEmitter", () => {
   it("can be constructed", () => {
     const eventEmitter = new EventEmitter();
@@ -35,9 +34,9 @@ describe("EventEmitter", () => {
     const callbacks = [jest.fn(), jest.fn(), jest.fn()];
     const payload = {};
 
-    eventEmitter.register("mouseClick", callbacks[0])
-    eventEmitter.register("mouseClick", callbacks[1])
-    eventEmitter.register("mouseClick", callbacks[2])
+    eventEmitter.register("mouseClick", callbacks[0]);
+    eventEmitter.register("mouseClick", callbacks[1]);
+    eventEmitter.register("mouseClick", callbacks[2]);
 
     eventEmitter.emit("mouseClick", payload);
 
