@@ -12,4 +12,8 @@ export class EventEmitter {
 
     this.events[eventName].push(callbackFn);
   };
+
+  emit = (eventName: string, payload: object) => {
+    this.events[eventName].forEach((callback) => callback(payload));
+  };
 }
