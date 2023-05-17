@@ -5,5 +5,11 @@ export class EventEmitter {
     this.events = {};
   }
 
- 
+  register = (eventName: string, callbackFn: Function) => {
+    if (!this.events[eventName]) {
+      this.events[eventName] = [];
+    }
+
+    this.events[eventName].push(callbackFn);
+  };
 }
